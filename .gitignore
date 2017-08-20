@@ -1,0 +1,10 @@
+Carthage/Build
+CSCorporateSDK/CSCorporateSDK.xcodeproj/xcuserdata
+CSCorporateSDK/CSCorporateSDK.xcodeproj/project.xcworkspace/xcuserdata
+CSCorporateSDK.xcworkspace/xcuserdata
+CSCorporateSDK.xcodeproj/xcuserdata
+CSCorporateSDK.xcodeproj/project.xcworkspace/xcuserdata
+CSCorporateSDK.xcodeproj/xcuserdata
+Carthage
+fastlane/test_output
+Cartfile.resolved
