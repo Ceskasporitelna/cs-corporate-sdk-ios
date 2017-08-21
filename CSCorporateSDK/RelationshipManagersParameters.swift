@@ -26,7 +26,7 @@ public class RelationshipManagersParameters : Parameters
         var params           = super.toDictionary(existingParams)
         
         let formatter        = DateFormatter()
-        formatter.dateFormat = CSCorporate.DateTimeFormat
+        formatter.dateFormat = Corporate.DateTimeFormat
         
         if let filter = self.filter {
             params ["filter"] = filter.value as AnyObject?

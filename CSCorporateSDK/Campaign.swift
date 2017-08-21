@@ -65,7 +65,7 @@ public class Campaign: WebApiEntity
     {
         self.id                    <- (map["id"], TransformOf<UInt64, NSNumber>(fromJSON: { $0?.uint64Value }, toJSON: { $0.map { NSNumber(value: $0) } }))
         self.name                  <- map["name"]
-        self.endDate               <- (map["endDate"], CustomDateFormatTransform(formatString: CSCorporate.DateTimeFormat))
+        self.endDate               <- (map["endDate"], CustomDateFormatTransform(formatString: Corporate.DateTimeFormat))
         self.channel               <- map["channel"]
         self.name                  <- map["name"]
         self.comment               <- map["comment"]

@@ -56,7 +56,7 @@
 		196E2DF61F485E4800F15321 /* RelationshipManagerPhotoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E2DF11F485E4800F15321 /* RelationshipManagerPhotoType.swift */; };
 		196E2DF71F485E4800F15321 /* RelationshipManagersFilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E2DF21F485E4800F15321 /* RelationshipManagersFilterType.swift */; };
 		196E2DFA1F485E6600F15321 /* CorporateClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E2DF81F485E6600F15321 /* CorporateClient.swift */; };
-		196E2DFB1F485E6600F15321 /* CSCorporate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E2DF91F485E6600F15321 /* CSCorporate.swift */; };
+		196E2DFB1F485E6600F15321 /* Corporate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E2DF91F485E6600F15321 /* Corporate.swift */; };
 		196E2DFD1F485E7E00F15321 /* JudgeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E2DFC1F485E7E00F15321 /* JudgeUtils.swift */; };
 		196E2E021F48641900F15321 /* CSCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196E2E011F48641900F15321 /* CSCoreSDK.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
@@ -124,7 +124,7 @@
 		196E2DF11F485E4800F15321 /* RelationshipManagerPhotoType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationshipManagerPhotoType.swift; sourceTree = "<group>"; };
 		196E2DF21F485E4800F15321 /* RelationshipManagersFilterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationshipManagersFilterType.swift; sourceTree = "<group>"; };
 		196E2DF81F485E6600F15321 /* CorporateClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorporateClient.swift; sourceTree = "<group>"; };
-		196E2DF91F485E6600F15321 /* CSCorporate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSCorporate.swift; sourceTree = "<group>"; };
+		196E2DF91F485E6600F15321 /* Corporate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Corporate.swift; sourceTree = "<group>"; };
 		196E2DFC1F485E7E00F15321 /* JudgeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JudgeUtils.swift; sourceTree = "<group>"; };
 		196E2E011F48641900F15321 /* CSCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSCoreSDK.framework; path = Carthage/Build/iOS/CSCoreSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,7 +177,7 @@
 				196E2D9A1F485DD200F15321 /* Enums */,
 				196E2D7F1F485BE800F15321 /* CSCorporateSDK.h */,
 				196E2DF81F485E6600F15321 /* CorporateClient.swift */,
-				196E2DF91F485E6600F15321 /* CSCorporate.swift */,
+				196E2DF91F485E6600F15321 /* Corporate.swift */,
 				196E2D801F485BE800F15321 /* Info.plist */,
 			);
 			path = CSCorporateSDK;
@@ -435,7 +435,7 @@
 				196E2DD81F485E2900F15321 /* Contact.swift in Sources */,
 				196E2DE21F485E2900F15321 /* RelationshipType.swift in Sources */,
 				196E2DF31F485E4800F15321 /* AccountType.swift in Sources */,
-				196E2DFB1F485E6600F15321 /* CSCorporate.swift in Sources */,
+				196E2DFB1F485E6600F15321 /* Corporate.swift in Sources */,
 				196E2DD21F485E2900F15321 /* AccountNumber.swift in Sources */,
 				196E2DD11F485E2900F15321 /* AccountOwnerPerson.swift in Sources */,
 				196E2DDC1F485E2900F15321 /* Employee.swift in Sources */,

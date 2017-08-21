@@ -2,7 +2,7 @@
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-This SDK allows you to list and submit Uniforms to Česká spořitelna a.s. [Corporate API](http://docs.ext1csascorporates.apiary.io/#).
+This SDK provides access to certain data the Erste Bank provides for its corporate clients. [Corporate API](http://
 
 # [CHANGELOG](CHANGELOG.md)
 
@@ -55,8 +55,8 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
         CoreSDK.sharedInstance
             .useWebApiKey("YourApiKey")
             .useEnvironment(Environment.Sandbox)
-        //Now you are ready to obtain the Uniforms client
-        let client = Uniforms.sharedInstance.client;
+        //Now you are ready to obtain the Corporate client
+        let client = Corporate.sharedInstance.client;
         return true
     }
 ```
@@ -67,7 +67,7 @@ For more configuration options see **[CoreSDK configuration guide](https://githu
 
 **See [Usage Guide](./docs/corporate.md)** for usage instructions.
 
-**TIP!** - You can also learn Uniforms SDK by example in our [**demo**](https://github.com/Ceskasporitelna/csas-sdk-demo-ios)!
+**TIP!** - You can also learn Corporate SDK by example in our [**demo**](https://github.com/Ceskasporitelna/csas-sdk-demo-ios)!
 
 # Contributing
 

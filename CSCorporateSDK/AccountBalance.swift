@@ -57,7 +57,7 @@ public class AccountBalance: WebApiEntity
         self.disposable            <- map["disposable"]
         self.minBalance            <- map["minBalance"]
         self.overdraft             <- map["overdraft"]
-        self.overdraftDueDate      <- (map["overdraftDueDate"], CustomDateFormatTransform(formatString: CSCorporate.DateFormat))
+        self.overdraftDueDate      <- (map["overdraftDueDate"], CustomDateFormatTransform(formatString: Corporate.DateFormat))
         
         super.mapping( map )
     }

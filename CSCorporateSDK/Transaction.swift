@@ -122,7 +122,7 @@ public class Transaction: WebApiEntity
         self.accountParty           <- map["accountParty"]
         self.amount                 <- map["amount"]
         self.amountSender           <- map["amountSender"]
-        self.bookingDate            <- (map["bookingDate"], CustomDateFormatTransform(formatString: CSCorporate.DateTimeFormat))
+        self.bookingDate            <- (map["bookingDate"], CustomDateFormatTransform(formatString: Corporate.DateTimeFormat))
         self.cardNumber             <- map["cardNumber"]
         self.constantSymbol         <- map["constantSymbol"]
         self.currRateEURValue       <- map["currRateEURValue"]
@@ -133,7 +133,7 @@ public class Transaction: WebApiEntity
         self.specificSymbol         <- map["specificSymbol"]
         self.transactionType        <- map["transactionType"]
         self.transactionTypeI18N    <- map["transactionTypeI18N"]
-        self.valuationDate          <- (map["valuationDate"], CustomDateFormatTransform(formatString: CSCorporate.DateTimeFormat))
+        self.valuationDate          <- (map["valuationDate"], CustomDateFormatTransform(formatString: Corporate.DateTimeFormat))
         self.variableSymbol         <- map["variableSymbol"]
 
         super.mapping( map )
