@@ -1,5 +1,5 @@
 //
-//  CSCorporateSDK.swift
+//  CSCorporate.swift
 //  CSCorporateSDK
 //
 //  Created by Vladimír Nevyhoštěný on 15/01/2017.
@@ -10,16 +10,16 @@ import Foundation
 
 
 //------------------------------------------------------------------------------
-public class CSCorporateSDK: NSObject
+public class CSCorporate: NSObject
 {
-    public static let BundleIdentifier = "cz.applifting.CSCorporateSDK"
+    public static let BundleIdentifier = "cz.applifting.CSCorporate"
     public static let DateTimeFormat   = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
     public static let DateFormat       = "yyyy-MM-dd"
     
     //--------------------------------------------------------------------------
     class func getBundle() -> Bundle
     {
-        let bundleForThisClass = Bundle(for: CSCorporateSDK.classForCoder())
+        let bundleForThisClass = Bundle(for: CSCorporate.classForCoder())
         if bundleForThisClass.bundleIdentifier == BundleIdentifier {
             return bundleForThisClass
         }
@@ -31,6 +31,6 @@ public class CSCorporateSDK: NSObject
     //--------------------------------------------------------------------------
     public class func localized( _ string: String ) -> String
     {
-        return NSLocalizedString( string, tableName: nil, bundle: CSCorporateSDK.getBundle(), value: "", comment: "")
+        return NSLocalizedString( string, tableName: nil, bundle: CSCorporate.getBundle(), value: "", comment: "")
     }
 }

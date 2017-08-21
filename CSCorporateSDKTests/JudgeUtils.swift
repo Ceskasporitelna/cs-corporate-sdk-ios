@@ -1,6 +1,6 @@
 //
 //  JudgeUtils.swift
-//  CSUniforms
+//  CSCorporateSDK
 //
 //  Created by Vladimír Nevyhoštěný on 24.12.15.
 //  Copyright © 2015 Applifting. All rights reserved.

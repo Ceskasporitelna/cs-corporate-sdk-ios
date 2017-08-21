@@ -1,5 +1,5 @@
 //
-//  CorporateSDKClient.swift
+//  CorporateClient.swift
 //  CSCorporateSDK
 //
 //  Created by Vladimír Nevyhoštěný on 14/01/2017.
@@ -9,7 +9,7 @@
 import CSCoreSDK
 
 //==============================================================================
-public class CorporateSDKClient: WebApiClient
+public class CorporateClient: WebApiClient
 {
     class var clientPath: String {
         return "/api/v1"

@@ -1,5 +1,5 @@
 //
-//  CSCorporateSDKTests.swift
+//  CSCorporateTests.swift
 //  CSCorporateSDKTests
 //
 //  Created by Vladimír Nevyhoštěný on 19/08/2017.
@@ -12,9 +12,9 @@ import CSCoreSDK
 @testable import CSCorporateSDK
 
 //==============================================================================
-class CSCorporateSDKTests: XCTestCase
+class CSCorporateTests: XCTestCase
 {
-    var client:           CorporateSDKClient!
+    var client:           CorporateClient!
     var judgeSession:     JudgeSession!
     
     var dateFormatter       = DateFormatter()
@@ -27,10 +27,10 @@ class CSCorporateSDKTests: XCTestCase
         
         let config                        = WebApiConfiguration(webApiKey: "TEST_API_KEY", environment: Environment(apiContextBaseUrl: Judge.BaseURL + "/webapi", oAuth2ContextBaseUrl: ""), language: "cs-CZ", signingKey: nil)
         self.judgeSession                 = Judge.startNewSession()
-        self.client                       = CorporateSDKClient(config: config)
+        self.client                       = CorporateClient(config: config)
         
-        self.dateFormatter.dateFormat     = CSCorporateSDK.DateFormat
-        self.dateTimeFormatter.dateFormat = CSCorporateSDK.DateTimeFormat
+        self.dateFormatter.dateFormat     = CSCorporate.DateFormat
+        self.dateTimeFormatter.dateFormat = CSCorporate.DateTimeFormat
         
     }
     
@@ -361,7 +361,7 @@ class CSCorporateSDKTests: XCTestCase
         
         let expectation      = self.expectation(description: "Response expectation")
         let formatter        = DateFormatter()
-        formatter.dateFormat = CSCorporateSDK.DateTimeFormat
+        formatter.dateFormat = CSCorporate.DateTimeFormat
         let params           = TransactionsParameters(pagination: Pagination(pageNumber:0, pageSize:1), dateStart: formatter.date(from: "2016-06-01T00:00:00+01:00"), dateEnd: formatter.date(from: "2016-06-01T00:00:00+01:00"))
         
         self.client.accounts.withId("3520EE975815E478AFED5180CC32647934720EF5").transactions.list(params) { result in
@@ -410,7 +410,7 @@ class CSCorporateSDKTests: XCTestCase
         let expectation      = self.expectation(description: "Response expectation")
         
         let formatter        = DateFormatter()
-        formatter.dateFormat = CSCorporateSDK.DateTimeFormat
+        formatter.dateFormat = CSCorporate.DateTimeFormat
         
         let dateStart        = formatter.date(from: "2016-06-01T00:00:00+01:00")
         let dateEnd          = formatter.date(from: "2016-06-01T00:00:00+01:00")

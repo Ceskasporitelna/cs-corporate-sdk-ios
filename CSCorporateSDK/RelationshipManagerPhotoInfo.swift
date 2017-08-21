@@ -58,7 +58,7 @@ public class RelationshipManagerPhotoInfo: WebApiEntity
     public override func mapping(_ map: Map)
     {
         self.empId                            <- (map["empId"], TransformOf<UInt64, NSNumber>(fromJSON: { $0?.uint64Value }, toJSON: { $0.map { NSNumber(value: $0) } }))
-        self.agreementDate                    <- (map["agreementDate"], CustomDateFormatTransform(formatString: CSCorporateSDK.DateFormat))
+        self.agreementDate                    <- (map["agreementDate"], CustomDateFormatTransform(formatString: CSCorporate.DateFormat))
         self.agreement                        <- map["agreement"]
         self.mimeType                         <- map["mimeType"]
         self.types                            <- map["types"]

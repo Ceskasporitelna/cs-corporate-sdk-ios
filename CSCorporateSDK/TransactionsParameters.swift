@@ -50,7 +50,7 @@ public class TransactionsParameters: PaginatedListParameters, Sortable
         var params           = super.toDictionary(existingParams)
         
         let formatter        = DateFormatter()
-        formatter.dateFormat = CSCorporateSDK.DateTimeFormat
+        formatter.dateFormat = CSCorporate.DateTimeFormat
         
         if let date = self.dateStart {
             params ["dateStart"] = formatter.string(from: date) as AnyObject?
