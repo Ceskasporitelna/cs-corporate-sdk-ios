@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "CSCorporateSDK"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.source       = { :tag => "v#{s.version}" , :git => "https://github.com/Ceskasporitelna/cs-corporate-sdk-ios.git" }
   s.dependency   "CSCoreSDK", "~> 2.0"
 
